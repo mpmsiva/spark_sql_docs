@@ -1,0 +1,60 @@
+Data Engineering 𝐑𝐞𝐚𝐥𝐭𝐢𝐦𝐞/𝐌𝐨𝐜𝐤 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰𝐬 
+
+If you're a data engineer or aspiring to become one, you should watch these data engineering interview videos to learn the types of questions typically asked in big data interviews
+
+1. Big Data Engineer Interview | Topics: Pyspark, Delta Lake, Data Profiling, Data Governance (Sumit Mittal)
+https://lnkd.in/gjzJfTvY
+
+2. TCS Live Interview for Azure Data Engineer | Technical round -1 Azure | KSR Datavizon 
+https://lnkd.in/gbHhmpy6
+
+3. AWS Data Engineering Interview - Ankur Ranjan
+https://lnkd.in/gaaJj8UR
+
+4. Amazon Data Engineer Mock Interview + Tips and Feedback!! ( Jay Feng)
+https://lnkd.in/gnRdQeeN
+
+5. Interview: Amazon Data Engineer (Majoring in Computer Science to working as Data Engineer) (Yong Sohn)
+https://lnkd.in/gCJCpa-J
+
+6. Data Engineering Interview | Apache Spark Interview | Live Big Data Interview (Harjeet Kumar)
+https://lnkd.in/gUWafF7b
+
+7. Uber Data Engineer Interview: Design a Ride Sharing Schema ( Jay Feng)
+https://lnkd.in/gg_yfWJC
+
+8. Azure Cloud Data Engineer Interview | Real-time Scenario based Questions & Expert Feedback | BigData (Sumit Mittal)
+https://lnkd.in/gUzwDmR9
+
+9. Data Engineering Mock Interview at Top Product Based Companies (Ankur Ranjan)
+https://lnkd.in/gAn9upXq
+
+10. HOW TO CRACK INTERVIEW 1 to 3 YEARS EXPERIENCED AZURE DATA ENGINEER (Devikrishna R 🇮🇳 💎)
+https://lnkd.in/gdkiRyGs
+
+11. NRI Subscriber(South Africa)| Bigdata Interview | Part-1 | Spark, HDFS, Hive, Sqoop, Hbase ( Naresh Kumar Boddupally)
+https://lnkd.in/gD2NAr6T
+
+✳𝐂𝐡𝐚𝐧𝐧𝐞𝐥𝐬 𝐭𝐨 𝐟𝐨𝐥𝐥𝐨𝐰 𝐟𝐨𝐫 𝐃𝐚𝐭𝐚 𝐞𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠 𝐦𝐨𝐜𝐤/𝐫𝐞𝐚𝐥 𝐭𝐢𝐦𝐞 𝐢𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰𝐬:
+
+1. Sumit Mittal - Sumit Mittal , TrendyTech
+https://lnkd.in/g9z7XfzR
+
+2. The Big Data Show - Ankur Ranjan
+ https://lnkd.in/guMURskG
+
+3. Jay Feng - Jay Feng
+https://lnkd.in/g8DuHm8B
+
+4. Data Savvy (Harjeet Kumar)
+https://lnkd.in/gAdxUwcA
+
+5. Vision Board ( Devikrishna R 🇮🇳 💎)
+https://lnkd.in/gNREUK_8
+
+6. Clever Studies (Naresh Kumar Boddupally )
+https://lnkd.in/g469hDm2
+
+🤝 Follow 👨‍💻 Abhisek Sahu for a regular curated feed of Data Engineering insights and valuable content!
+
+Follow : Data & Cloud Engineers 👨‍💻👩‍💻 : https://lnkd.in/g-ZtB4Yf

@@ -1,0 +1,328 @@
+interview tips:
+
+
+water mark column for incremental upload and delta table for time gap
+
+data validation-- error log table, exception handling, stored procedure - for input and output for every transformation. (error log table should be empty, if any data comes there is an error)
+
+what is broadcast in python
+
+troubleshooting : which part of code is taking time, metrics, resources consumption time, CPU consumption time, disk usage, shaffle memories , log analytics charts(kibana). outliers and drilldown of charts(ELK)
+
+sharding vs partination
+
+dinamodb vs elasticsearch
+
+secondary index in dynamo db
+
+data leanage --audit mechanisam ()
+
+AWS Lambda 15 mints max can run(time out)
+
+Athena and S3 cross regien query
+
+Encription, server side login, different IAM roles
+
+
+27/09/2024
+
+data profiling, data governance, 
+
+data catilog- unity catologs
+
+data leanage for debugging 
+
+delta file -------------------------------------------------- in Aure
+
+data frame vs data ser  -- type safty (complitime safety and run time safty)
+
+datafarme not compile time safty
+
+dataset is complie time safty --DataFrames do not provide compile-time type safety. If a column specified in the code does not exist in the DataFrame, the error will only be detected at runtime, potentially leading to runtime errors.
+
+Dataset API provides a type-safe, object-oriented programming interface. DataFrame is an alias for an untyped Dataset [Row]. Datasets provide compile-time type safety—which means that production applications can be checked for errors before they are run—and they allow direct operations over user-defined classes
+
+
+Reading corrupt records- permissive - null are inserted in place of currepted records
+			- DROPMALFORMED : ignores the whole corrupted records
+			- FAILFAST throws an exception when detects corrupted records	
+			
+ ownership. delever results, customer opsitions, commit and disagree
+
+
+
+Data Modelling: https://learndatamodeling.com/blog/ca...
+Product Sense: stellarpeers.com 
+Interview Structure Guide: https://prepfully.com/interview-guides
+System Design: https://github.com/donnemartin/system...
+System Design: educative.io (courses Groking the system design) (paid) 
+
+
+Airflow SLA for long running jobs
+
+Kafka offset is a unique identifier for each message in a partition of a Kafka topic. 
+low offset, hight offset.
+
+water mark column (timestamp) -A watermark is a column in each table that indicates when the corresponding row was last created or modified. The watermark column is used to find out or slice the new or updated records for every run
+
+iceberg table format-  schema evolution
+
+A watermark column in Amazon Redshift is a common way to implement Change Data Capture (CDC) and track changes made to a database. A watermark column is a table that stores the last updated timestamp of data
+
+
+In Event time the data is processed based on the timestamp at the source of each record. It is essentially the time in which event is created.
+
+Process time is the time of receival of data at the streaming application. This is also the time where the data is processed at the streaming service.
+
+PII data hashing -
+
+In this example, we created a DataFrame with two columns, “name” and “age”, and three rows of sample data. Then, we used the hash function to compute the hash value of the “name” column and added this value as a new column to the DataFrame	
+
+hash : This function takes an input value and produces a 32-bit hash value.
+
+
+
+from pyspark.sql.functions import hash
+
+# create a DataFrame with sample data
+data = [("John", 30), ("Jane", 35), ("Jim", 40)]
+df = spark.createDataFrame(data, ["name", "age"])
+
+# compute the hash value of the name column
+hashed_df = df.withColumn("name_hash", hash("name"))
+hashed_df.show()
+
+# Output
++----+---+---------+
+|name|age|name_hash|
++----+---+---------+
+|John| 30| 10293347|
+|Jane| 35|  5662395|
+| Jim| 40|  5396431|
++----+---+---------+
+
+
+md5 : This function computes the MD5 hash value of the input string.
+
+from pyspark.sql.functions import md5
+
+# create a DataFrame with sample data
+data = [("John", 30), ("Jane", 35), ("Jim", 40)]
+df = spark.createDataFrame(data, ["name", "age"])
+
+# compute the MD5 hash value of the name column
+md5_df = df.withColumn("name_md5", md5("name"))
+md5_df.show()
+
+# Output
++----+---+--------------------+
+|name|age|            name_md5|
++----+---+--------------------+
+|John| 30|5c12701b368d33f22...|
+|Jane| 35|b690e02318d5c286e...|
+| Jim| 40|4a4c4af89a2a6b66c...|
++----+---+--------------------+
+
+Encrypt and Decrypt the Data in PySpark:
+
+enc_df = df.withColumn('encrypted_mail', expr("base64(aes_encrypt(mail_id, '1234567890abcdef', 'ECB', 'PKCS'))"))
+           .withColumn('encrypted_mobile_num', expr("base64(aes_encrypt(mobile_num, '1234567890abcdgh', 'ECB', 'PKCS'))"))
+           .withColumn('encrypted_ssn', expr("base64(aes_encrypt(social_security_number, '1234567890abcdij', 'ECB', 'PKCS'))"))
+enc_df.show()
+
+https://medium.com/@rganesh0203/encrypt-and-decrypt-pyspark-data-frame-4dd5f5d1f40b
+
+
+Low cardinality refers to a column or row in a database that has many repeated values, while high cardinality refers to a column or row that has many distinct values.
+
+
+Pagenation data API
+
+A single source of truth (SSOT) is the practice of aggregating the data from many systems within an organization to a single location. A SSOT is not a system, tool, or strategy, but rather a state of being for a company's data in that it can all be found via a single reference point.
+
+A source of truth (SoT) is a centralized system that stores and maintains an organization's most reliable data. It's the primary source for all other data repositories and systems within the organization
+
+Prometheus Grafana for application monitoring
+
+Sensu for incident management
+
+Role based policy 
+
+latency or delayed running jobs-
+    -- cluster level changes
+	--code level 
+	--recsource level 
+
+Spark Join Strategies: Mastering Joins in Apache Spark
+https://www.linkedin.com/pulse/spark-join-strategies-mastering-joins-apache-venkatesh-nandikolla-mk4qc/
+
+IN -clause and SUB Query in SQL will cause performance problem 
+
+
+
+how to list the data of a column in list format
+use zomato;
+
+select group_concat(action) from EmployeeMovement;
+
+'In,Out,In,In,Out,In,Out,In,Out,In,Out,In,Out,In,Out,In,Out,In,Out,In,Out'
+
+"," is default
+
+
+# Using collect_list()
+from pyspark.sql.functions import collect_list
+df2 = df.groupBy("name").agg(collect_list("languages") \
+    .alias("languages"))
+df2.printSchema()    
+df2.show(truncate=False) 
+
+
+PySpark SQL function collect_set() is similar to collect_list(). The difference is that collect_set() dedupe or eliminates the duplicates and results in uniqueness for each value.
+
+from pyspark.sql.functions import collect_set
+df2 = df.groupBy("name").agg(collect_set("languages") \
+    .alias("languages"))
+df2.printSchema()    
+df2.show(truncate=False)
+
+
+PySpark Split Column into multiple columns
+
+df1 = df.withColumn('year', split(df['dob'], '-').getItem(0)) \
+       .withColumn('month', split(df['dob'], '-').getItem(1)) \
+       .withColumn('day', split(df['dob'], '-').getItem(2))
+df1.show(truncate=False)
+
++---------+----------+--------+----------+----+-----+---+
+|firstname|middlename|lastname|dob       |year|month|day|
++---------+----------+--------+----------+----+-----+---+
+|James    |          |Smith   |1991-04-01|1991|04   |01 |
+|Michael  |Rose      |        |2000-05-19|2000|05   |19 |
+|Robert   |          |Williams|1978-09-05|1978|09   |05 |
+|Maria    |Anne      |Jones   |1967-12-01|1967|12   |01 |
+|Jen      |Mary      |Brown   |1980-02-17|1980|02   |17 |
++---------+----------+--------+----------+----+-----+---+
+
+
+another way:
+
+split_col = pyspark.sql.functions.split(df['dob'], '-')
+df2 = df.withColumn('year', split_col.getItem(0)) \
+       .withColumn('month', split_col.getItem(1)) \
+       .withColumn('day', split_col.getItem(2))
+df2.show(truncate=False) 
+
+# split() with function variable
+
+split_col = pyspark.sql.functions.split(df['dob'], '-')
+df3 = df.select("firstname","middlename","lastname","dob", split_col.getItem(0).alias('year'),split_col.getItem(1).alias('month'),split_col.getItem(2).alias('day'))   
+df3.show(truncate=False)
+
+
+Spark Memory Management:
+https://medium.com/analytics-vidhya/spark-memory-management-583a16c1253f
+
+By default, Spark uses On-memory heap only. The On-heap memory area in the Executor can be roughly divided into the following four blocks:
+
+Storage Memory: It’s mainly used to store Spark cache data, such as RDD cache, Unroll data, and so on.
+Execution Memory: It’s mainly used to store temporary data in the calculation process of Shuffle, Join, Sort, Aggregation, etc.
+User Memory: It’s mainly used to store the data needed for RDD conversion operations, such as the information for RDD dependency.
+Reserved Memory: The memory is reserved for the system and is used to store Spark’s internal object
+
+
+sort merge join vs shuffle hash join spark:
+https://oindrila-chakraborty88.medium.com/different-types-of-join-strategies-in-apache-spark-5c0066999d0d
+
+
+deployment:
+CICD
+Source
+foreach activity
+copy activity
+stored procedure activity
+
+
+code testing:
+code review,
+
+push to production
+
+
+Left anti join for missed records
+
+Primary Key:multiple columns
+# PySpark join multiple columns
+empDF.join(deptDF, (empDF["dept_id"] == deptDF["dept_id"]) &
+   ( empDF["branch_id"] == deptDF["branch_id"])).show()
+
+# Using where or filter
+empDF.join(deptDF).where((empDF["dept_id"] == deptDF["dept_id"]) &
+    (empDF["branch_id"] == deptDF["branch_id"])).show()
+
+#Join without duplicate columns
+empDF.join(deptDF,["dept_id","branch_id"]).show()
+
+# Spark SQL
+spark.sql("SELECT * FROM EMP e, DEPT d where e.dept_id == d.dept_id"
+         " and e.branch_id == d.branch_id").show()
+
+
+
+PySpark Hash for creating primary key with multiple column with hash function:
+
+from pyspark.sql.functions import md5
+
+# create a DataFrame with sample data
+data = [("John", 30), ("Jane", 35), ("Jim", 40)]
+df = spark.createDataFrame(data, ["name", "age"])
+
+# compute the MD5 hash value of the name column
+md5_df = df.withColumn("name_md5", md5("name"))
+md5_df.show()
+
+# Output
++----+---+--------------------+
+|name|age|            name_md5|
++----+---+--------------------+
+|John| 30|5c12701b368d33f22...|
+|Jane| 35|b690e02318d5c286e...|
+| Jim| 40|4a4c4af89a2a6b66c...|
++----+---+--------------------+
+
+
+
+
+df_hashed_3 = df_salted_1\
+    .withColumn('HashedSaltedID', sha2(col('SaltedID'), 256))\
+    .select('ID', 'SaltedID', 'HashedSaltedID', 'SSN', 'Name')
+
+
+
+
+Hashing Multiple Columns with Salt Value
+This example is probably the one I’ve used the most in production. Suppose you have a Slowly Changing Dimension table of SCD Type 2 that contains ID, DateEffectiveFrom, and DateEffectiveThru columns, along with any other attributes needed. In SCD Type 2, the ID column is not a Primary Key column, as it can appear multiple times in the table with different effective dates. To fix that, you could derive an EffectiveID column that is a hash of both the ID and DateEffectiveFrom columns.
+
+salt_value = 'datamadness'
+
+df_salted_2 = df\
+    .withColumn('SaltedCombinationID', concat_ws('_', lit(salt_value), col('ID'), col('SSN')))\
+    .select('ID', 'SSN', 'SaltedCombinationID', 'Name')
+
+
+https://datamadness.medium.com/using-pyspark-to-generate-a-hash-of-a-column-d9539033956e
+
+
+
+How can I tell if my data are skewed?
+
+import pyspark.sql.functions as F
+df.groupBy(F.spark_partition_id()).count().show()
+
+
+Salting:
+import pyspark.sql.functions as F
+df = df.withColumn('salt', F.rand())
+df = df.repartition(8, 'salt')
+
+

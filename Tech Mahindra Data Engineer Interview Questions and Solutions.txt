@@ -1,0 +1,82 @@
+Tech Mahindra Data Engineer Interview Questions and Solutions:
+
+1. How to pull data from S3 using PySpark in AWS Glue?
+
+glueContext = GlueContext(SparkContext.getOrCreate())
+df = glueContext.create_dynamic_frame.from_options(
+ connection_type="s3",
+ format="parquet",
+ connection_options={"paths": ["s3://your-bucket/path/to/data"]}
+)
+
+2. How to perform data validation in PySpark?
+
+df.filter(df["column_name"].isNull()).count()
+df.groupBy("unique_column").count().filter("count > 1").show()
+df.filter((df["column_name"] < 0) | (df["column_name"] > 100)).show()
+
+3. How to perform a broadcast join in PySpark with a lookup table?
+
+df_broadcast = broadcast(df_lookup)
+df_joined = df_large.join(df_broadcast, df_large.id == df_broadcast.id, "left_outer")
+
+4. Why use Parquet and JSON formats?
+
+Parquet: Optimized for big data analytics, stores data in columns, great for queries where you need only a few columns.
+
+JSON: Human-readable, best for semi-structured data, works well when data needs to be exchanged across systems.
+
+
+6. How to troubleshoot a failed Airflow DAG?
+
+- Check task logs in Airflow UI for error details.
+- Ensure correct task dependencies.
+- Verify external resources like databases or APIs are available.
+- Check for timeouts and adjust execution time limits.
+
+7. How to query Parquet files in S3 using Amazon Athena?
+
+CREATE EXTERNAL TABLE my_table (
+ id INT,
+ name STRING,
+ age INT
+)
+STORED AS PARQUET
+LOCATION 's3://your-bucket/path/to/data';
+
+SELECT * FROM my_table WHERE age > 30;
+
+8. How to query Parquet files in S3 using Redshift Spectrum?
+
+CREATE EXTERNAL SCHEMA spectrum_schema
+FROM DATA CATALOG
+DATABASE 'my_database'
+IAM_ROLE 'arn:aws:iam::123456789012:role/MySpectrumRole';
+
+CREATE EXTERNAL TABLE spectrum_schema.my_table (
+ id INT,
+ name VARCHAR(255),
+ age INT
+)
+STORED AS PARQUET
+LOCATION 's3://your-bucket/path/to/data';
+
+SELECT * FROM spectrum_schema.my_table WHERE age > 30;
+
+9. How to resolve slow SQL queries in Athena or Redshift?
+
+- Use partitioning to reduce the amount of data scanned.
+- Apply filters early in the query.
+- Ensure Parquet files are large enough (128 MB - 1 GB).
+- Use columnar formats like Parquet for better performance.
+
+10. What are the criteria for partitioning data?
+
+- Partition by medium cardinality columns (e.g., date, region).
+- Choose columns frequently used in WHERE clauses.
+- Ensure partitions are large enough (128 MB - 1 GB per partition).
+- Avoid partitioning by high cardinality columns like user_id.
+
+(These questions are based on a friend's recent interview experience)
+
+Follow me for more content on Interview Prep and Data Engineering ➡️ Akshay Kumar 

@@ -1,0 +1,17 @@
+Daily issues faced by Data Engineers:
+
+1. How do you handle job failures in an ETL pipeline?
+2. What steps do you take when a data pipeline is running slower than expected?
+3. How do you address data quality issues in a large dataset?
+4. What would you do if a scheduled job didn't trigger as expected?
+5. How do you troubleshoot memory-related issues in Spark jobs?
+6. What is your approach to handling schema changes in source systems?
+7. How do you manage data partitioning in large-scale data processing?
+8. What do you do if data ingestion from a third-party API fails?
+9. How do you resolve issues with data consistency between different data stores?
+10. How do you handle out-of-memory errors in a Hadoop job?
+11. What steps do you take when a data job exceeds its allocated time window?
+12. How do you manage and monitor data pipeline dependencies?
+13. What do you do if the output of a data transformation step is incorrect?
+14. How do you address issues with data duplication in a pipeline?
+15. How do you handle and log errors in a distributed data processing job?

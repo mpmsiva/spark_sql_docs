@@ -1,0 +1,33 @@
+
+𝐒𝐨𝐦𝐞 𝐁𝐚𝐬𝐢𝐜𝐬 & 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 𝐃𝐢𝐟𝐟𝐞𝐫𝐞𝐧𝐜𝐞𝐬 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 𝐟𝐨𝐫 𝐚𝐧𝐲 𝐃𝐚𝐭𝐚 𝐞𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰 . 
+These are must know topics, prepare before your next discussion. 
+
+1- HAVING vs WHERE 
+2- UNION vs UNION ALL
+3- UNION vs JOIN
+4- DROP vs DELETE vs TRUNCATE
+5- RANK vs DENSE_RANK vs ROW_NUMBER
+6- DATABASE vs DATAWAREHOUSE vs DATALAKE
+7- COALESCE vs ISNULL/NVL
+8- SNOWFLAKE vs STAR SCHEMA
+9- KIMBALL vs INMON
+10- FUNCTION vs STORED PROC
+11- ETL vs ELT
+12- CLOUD vs ONPREM
+13- VIEW vs MATERIALIZED VIEW
+14- COUNT (*) vs COUNT (Column)
+15- CROSS APPLY vs OUTER APPLY 
+16- OLAP vs OLTP
+17- BATCH vs STREAM PROCESSING
+18- SCHEMA ON WRTIE vs SCHEMA ON READ
+19- NORMALIZATION vs DENORMALIZATION
+20- CDC vs INCREMENTAL LOAD
+21- LAMBDA vs KAPPA
+22- OBT vs DIMENSION MODELING 
+23- ROLE PLAYING vs CONFORMED DIMENSION
+24- SCD TYPE 1 vs TYPE 2
+25 - DATA VAULT 2.0 vs 3NF 
+
+SQL - Normalization Forms
+DWH - Early Arriving Facts or Late Arriving Dimensions
+

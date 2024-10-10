@@ -1,0 +1,69 @@
+𝟭𝟱 𝗘𝘀𝘀𝗲𝗻𝘁𝗶𝗮𝗹 𝗚𝗶𝘁𝗛𝘂𝗯 𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝗶𝗲𝘀 𝘁𝗼 𝗠𝗮𝘀𝘁𝗲𝗿 𝗗𝗮𝘁𝗮 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴
+
+1. data-engineer-handbook 
+https://lnkd.in/gvJr8QBW
+
+2. data-engineering-zoomcamp 
+https://lnkd.in/gSZxYdKA
+
+3. The Data Engineering Cookbook - 
+https://lnkd.in/guktWNiA
+
+4. awesome-data-engineering
+https://lnkd.in/gTiF-ksK
+
+5. Data Engineer Roadmap
+ https://lnkd.in/gsQBRivw
+ 
+6. Data Engineering HowTo
+https://lnkd.in/g8tDmiqE
+
+7. Data Engineering Practice
+https://lnkd.in/gsFVqxqP
+
+8. Data Engineering Wiki
+https://lnkd.in/gVUUfu2Y
+
+9. Pyspark Example Project
+https://lnkd.in/g-T_ZqXu
+
+10. Awesome Open Source Data Engineering
+https://lnkd.in/gXgWTQ5C
+
+11. Data-Engineer-Nanodegree-Projects-Udacity
+https://lnkd.in/g9Z8eQ7Y
+
+12. google-data-engineering-coursera
+https://lnkd.in/gF9mMDJU
+
+13. datacamp-Data-Engineer-with-Python-course
+https://lnkd.in/gRb5_5Ep
+
+14. data-engineer-portfolio
+https://lnkd.in/gm3VDFVB
+
+15. Data-Engineering-Project-with-HDFS-and-Kafka
+https://lnkd.in/gkw4wYSC
+
+𝗖𝗿𝗲𝗮𝘁𝗼𝗿𝘀 𝘄𝗵𝗼 𝗽𝗼𝘀𝘁 𝗰𝗼𝗻𝘁𝗲𝗻𝘁 𝗼𝗻 𝗗𝗮𝘁𝗮 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 ⏬ 
+
+➡ Zach Wilson 
+➡ Ankit Bansal 
+➡ Sumit Mittal 
+➡ Darshil Parmar 
+➡ Deepak Goyal 
+➡ Sagar Prajapati 
+➡ Ankur Ranjan 
+➡ Prashant Kumar Pandey 
+➡ Brij kishore Pandey 
+➡ Shashank Mishra 🇮🇳 
+➡ Chandresh Desai 
+➡ Shubham Wadekar 
+➡ Munna Das 
+
+Save and repost ✅
+ 
+▶️ Dont forget to follow 👨‍💻Abhisek Sahu for such Data Engineering 
+insights and valuable content!
+
+Join our Data Engineering Community : https://lnkd.in/gy4R55Tj

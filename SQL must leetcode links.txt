@@ -1,0 +1,37 @@
+Here is list of must do SQL Coding questions you should good with.
+
+ 1. Managers with at Least 5 Direct Reports : https://lnkd.in/dfHH-RXZ
+ 
+2. Game Play Analysis IV : https://lnkd.in/d-uBd2nM
+ 
+3. Immediate Food Delivery II : https://lnkd.in/diMvkzmH
+ 
+4. Monthly Transactions I : https://lnkd.in/dAXviCGU
+ 
+5. Average Selling Price: https://lnkd.in/dEPnegej
+ 
+6. Confirmation Rate: https://lnkd.in/dyne4_5U
+ 
+7. Department Top Three Salaries: https://lnkd.in/dzdhfArf
+ 
+8. Investments in 2016 : https://lnkd.in/dsNxGN9c
+ 
+9. Restaurant Growth : https://lnkd.in/d8sycPrP
+ 
+10. Movie Rating: https://lnkd.in/d2F79KZA
+ 
+11. Exchange Seats: https://lnkd.in/d8d9_aZH
+ 
+12. Count Salary Categories: https://lnkd.in/dVfjPXvW
+ 
+13. Last Person to Fit in the Bus: https://lnkd.in/dJEuYJwj
+ 
+14. Product Price at a Given Date: https://lnkd.in/dk7zUEWD
+ 
+15. Consecutive Numbers: https://lnkd.in/dyyj3pjF
+ 
+16. Customers Who Bought All Products: https://lnkd.in/dgjMJVU8
+ 
+17. Number of Unique Subjects Taught by Each Teacher: https://lnkd.in/dPH8AdWy
+ 
+18. User Activity for the Past 30 Days I: https://lnkd.in/dKTTwA6U
